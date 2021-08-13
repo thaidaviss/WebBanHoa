@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>home</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style_header_footer.css">
+    <link rel="stylesheet" href="./css/home/style_home.css">
+    <link rel="stylesheet" href="./css/style-slide.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/header_footer/menu_library.js"></script>
+    
+</head>
+
+<body onresize="setOffSetMarginSlide()">
+    <div class="wrapper">
+
+        <div class="header">
+
+            <div class="header__head">
+                <div class="container header--inner">
+                    <div class="header__head--left">
+                        <p><i class="fas fa-clock"></i>Open time: 8:00 - 18:00 Monday - Sunday</p>
+                        <div class="header__head--social">
+                            <ul class="social__list">
+                                <li class="social__item"> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="social__item"> <a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li class="social__item"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social__item"> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__head--right">
+                        <a href="./login.html"><i class="fas fa-user-alt"></i>Đăng nhập</a>
+                        <a href="./register.html"><i class="fas fa-user-plus"></i>Đăng ký</a>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container header--inner">
+                    <div class="header__body--left">
+                        <a href="./home.html"> <img src="./img/logo.png" alt="" class="logo"></a>
+                        <a href="./home.html"> <img src="./img/beside_logo.png" alt=""></a>
+                    </div>
+                    <div class="header__body--right">
+                        <div class="header__body--mid">
+                            <p><i class="fas fa-phone-alt"></i>Hỗ trợ : (04) 6674 2332 - (04) 3786 8904</p>
+                            <div class="header__body--search">
+                                <input type="text" class="header__body--search" placeholder="Tìm kiếm...">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                        </div>
+                        <div class="header__body--cart">
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <p>0 Sản phẩm</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="logo__mobile">
+                <a href="./home.html"> <img src="./img/logo.png" alt=""></a>
+            </div>
+
+            <div class="menu_mobile">
+
+                <div class="container">
+                    <a href=""><i class="fas fa-bars"></i></a>
+                    <div class="menu_mobile-right">
+                        <a href=""> <i class="fas fa-search"></i> </a>
+                        <a href="./cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__menu">
+                <div class="container">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <i class="fas fa-bars"></i>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./home.html">Trang chủ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./products.html">Sản phẩm </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Sản phẩm mới</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./news.html">Tin tức</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__slide">
+                <ul class="circle__list point">
+                    <li class="circle__item "><input type="radio" onclick="currentSlide(0)" name="slide" checked></li>
+                    <li class="circle__item "><input type="radio" onclick="currentSlide(1)" name="slide"></li>
+                    <li class="circle__item "><input type="radio" onclick="currentSlide(2)" name="slide"></li>
+                </ul>
+                <div class="header__slide--list">
+                    <img src="./img/slide-1920x590.png" alt="" class="header__slide--item first">
+                    <img src="./img/slider_2.jpg" alt="" class="header__slide--item">
+                    <img src="./img/slide-3.jpg" alt="" class="header__slide--item">
+
+                </div>
+
+                <a class=" btn-next-left" onclick="plusSlideLeft()"><i class="fas fa-chevron-left point"></i></a>
+                <a class=" btn-next-right" onclick="plusSlideRight()"><i class="fas fa-chevron-right point"></i></a>
+
+            </div>
+
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="product__title">
+                    <p>Sản phẩm nổi bật</p>
+                </div>
+                <div class="product__feature">
+                    <div class="product__feature--inner">
+                        <div class="product__feature--left">
+                            <div class="product__card product__card--large product__card--xl">
+                                <img src="img/spx2/spx2-1.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+
+                            </div>
+                            <div class="product__group">
+                                <div class="product__card product__card--large">
+                                    <img src="./img/spx2/spx2-2.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status  product__status--reduce">-50%</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="./img/spx2/spx2-3.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status  product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product__feature--right">
+                            <div class="product__group">
+                                <div class="product__card product__card--large">
+                                    <img src="./img/spx2/spx2-4.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status  product__status--reduce">-30%</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="./img/spx2/spx2-5.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status  product__status--reduce">-50%</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large product__card--xl">
+                                <img src="./img/spx2/spx2-7.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status  product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="product__primacy">
+                    <div class="product__buy">
+                        <div class="product__group">
+                            <div class="product__title">
+                                <p>Sản Phẩm mua nhiều</p>
+                            </div>
+                            <div class="product__next__left">
+                                <a onclick="nextSlideLeft_new()" class="product__next--left"><i
+                                        class="fas fa-chevron-left"></i></a>
+                                <a onclick="nextSlideRight_new()" class="product__next--right"><i
+                                        class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="product__buy--inner">
+                            <div class="product__buy--list">
+                                <div class="product__card product__card--small">
+                                    <img src="img/spx2/spx2-10.png" alt="">
+                                    <div class="product__interactive">
+
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--small">
+                                    <img src="img/spx2/spx2-11.png" alt="">
+                                    <div class="product__interactive">
+
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--small">
+                                    <img src="img/spx2/spx2-12.png" alt="">
+                                    <div class="product__interactive">
+
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--small">
+                                    <img src="img/spx2/spx2-13.png" alt="">
+                                    <div class="product__interactive">
+
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--small">
+                                    <img src="img/spx2/spx2-14.png" alt="">
+                                    <div class="product__interactive">
+
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--small">
+                                    <img src="img/spx2/spx2-14.png" alt="">
+                                    <div class="product__interactive">
+
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ </h4>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__discount">
+
+                        <div class="product__group">
+                            <div class="product__title">
+                                <p>Sản phẩm khuyến mại</p>
+                            </div>
+                            <div class="product__next">
+                                <a onclick="nextSlideLeft()" class="product__next--left"><i
+                                        class="fas fa-chevron-left"></i></a>
+                                <a onclick="nextSlideRight()" class="product__next--right"><i
+                                        class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="product__discount--inner">
+                            <div class="product__discount-row">
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-7.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-8.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-9.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-10.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-1.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="product__discount-row">
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-11.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-1.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-2.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-3.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                                <div class="product__card product__card--large">
+                                    <img src="img/spx2/spx2-4.png" alt="">
+                                    <div class="product__interactive">
+                                        <h3 class="product__status product__status--new">New</h3>
+                                        <div class="product__btn">
+                                            <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                            <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        </div>
+
+                                    </div>
+                                    <div class="product__content">
+                                        <h4 class="product__name">Cây xương rồng </h4>
+                                        <h4 class="product__price">320.000₫ <span
+                                                class="product__price--old">450.000₫</span> </h4>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="banner">
+                    <img src="./img/banner-11140x217.png" alt="">
+                </div>
+                
+                <div class="product__new">
+                    <div class="product__group">
+                        <div class="product__title">
+                            <p>Sản phẩm mới</p>
+                        </div>
+                        <div class="product__next">
+                            <a onclick="nextSlideLeft_bottom()" class="product__next--left"><i
+                                    class="fas fa-chevron-left"></i></a>
+                            <a onclick="nextSlideRight_bottom()" class="product__next--right"><i
+                                    class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="product__new--inner">
+                        <div class="product__discount-row">
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-7.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-8.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-9.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-10.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+    
+    
+                        </div>
+                        <div class="product__discount-row">
+    
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-1.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-2.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="img/spx2/spx2-4.png" alt="">
+                                <div class="product__interactive">
+                                    <h3 class="product__status product__status--new">New</h3>
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                    </div>
+    
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <h4 class="product__price">320.000₫ <span class="product__price--old">450.000₫</span>
+                                    </h4>
+                                </div>
+    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="product__title">
+                    <p>Tin tức</p>
+                </div>
+                <div class="news">
+                    <div class="news__item">
+                        <div class="news__img">
+                            <img src="./img/Hard-to-kill-indoor-plants.png" alt="">
+                        </div>
+                        <small class="news__time">Thứ 7 ,ngày 31, tháng 12, năm 2015</small>
+                        <h4 class="news__title">15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê </h4>
+                        <p class="news__content">Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa
+                            chuộng hiện nay nhé ! Kết hợp hàng rào</p>
+                        <a href="#" class="news__link">Đọc tiếp</a>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img">
+                            <img src="./img/11248902_984651828231999_68851709_n.png" alt="">
+                        </div>
+
+                        <small class="news__time">Thứ 7 ,ngày 31, tháng 12, năm 2015</small>
+                        <h4 class="news__title">15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê </h4>
+                        <p class="news__content">Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa
+                            chuộng hiện nay nhé ! Kết hợp hàng rào</p>
+                        <a href="#" class="news__link">Đọc tiếp</a>
+                    </div>
+                    <div class="news__item">
+                        <div class="news__img">
+                            <img src="./img/The_Sill_84_Hester.png" alt="">
+                        </div>
+
+                        <small class="news__time">Thứ 7 ,ngày 31, tháng 12, năm 2015</small>
+                        <h4 class="news__title">15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê </h4>
+                        <p class="news__content">Cùng Sài Gòn Hoa tìm hiểu một vài xu hướng thiết kế sân vườn được ưa
+                            chuộng hiện nay nhé ! Kết hợp hàng rào</p>
+                        <a href="#" class="news__link">Đọc tiếp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__contact">
+                <div class="container  footer__contact--inner">
+                    <div class="social">
+                        <h3 class="social__title">kÊNH THÔNG TIN TỪ CHÚNG TÔI :</h3>
+                        <div class="social__list">
+                            <a href="" class="social__item"> <i class="fab fa-facebook"></i></a>
+                            <a href="" class="social__item"> <i class="fab fa-twitter"></i></a>
+                            <a href="" class="social__item"> <i class="fab fa-youtube"></i></a>
+                            <a href="" class="social__item"> <i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h3>ĐĂNG KÍ NHẬN EMAIL TỪ CHÚNG TÔI</h3>
+                        <input type="text" placeholder="Enter your email...">
+                        <a href=""><i class="fas fa-paper-plane send_email"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__menu-footer">
+                <div class="container">
+                    <div class="menu__item">
+                        <img src="./img/logo.png" alt="" class="logo">
+                        <p>Mang cả không gian xanh vào ngôi nhà của bạn!</p>
+                        <a href="tel:+8418006750">1800 6750</a>
+                        <a href="mailto:support@sapo.vn">support@sapo.vn</a>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">VỀ CHÚNG TÔI</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">ĐIỀU KHOẢN</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">HƯỚNG DẪN</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">CHÍNH SÁCH</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__menu-infor">
+                <div class="container">
+                    <div class="infor__list">
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+                    </div>
+                    <div class="infor__pay">
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-stripe"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© Bản quyền thuộc về wiliam1307</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/slideShow.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,100;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Products</title>
+    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/home/style_home.css">
+    <link rel="stylesheet" href="./css/style_header_footer.css">
+    <link rel="stylesheet" href="./css/products/style_products.css">
+    <script src="./js/header_footer/menu_library.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+
+            <div class="header__head">
+                <div class="container header--inner">
+                    <div class="header__head--left">
+                        <p><i class="fas fa-clock"></i>Open time: 8:00 - 18:00 Monday - Sunday</p>
+                        <div class="header__head--social">
+                            <ul class="social__list">
+                                <li class="social__item"> <a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="social__item"> <a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li class="social__item"> <a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li class="social__item"> <a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__head--right">
+                        <a href="./login.html"><i class="fas fa-user-alt"></i>Đăng nhập</a>
+                        <a href="./register.html"><i class="fas fa-user-plus"></i>Đăng ký</a>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="header__body">
+                <div class="container header--inner">
+                    <div class="header__body--left">
+                        <a href="./home.html"> <img src="./img/logo.png" alt="" class="logo"></a>
+                        <a href="./home.html"> <img src="./img/beside_logo.png" alt=""></a>
+                    </div>
+                    <div class="header__body--right">
+                        <div class="header__body--mid">
+                            <p><i class="fas fa-phone-alt"></i>Hỗ trợ : (04) 6674 2332 - (04) 3786 8904</p>
+                            <div class="header__body--search">
+                                <input type="text" class="header__body--search" placeholder="Tìm kiếm...">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                        </div>
+                        <div class="header__body--cart">
+                            <a href="./cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <p>0 Sản phẩm</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="logo__mobile">
+                <a href="./home.html"> <img src="./img/logo.png" alt=""></a>
+            </div>
+
+            <div class="menu_mobile">
+
+                <div class="container">
+                    <a href=""><i class="fas fa-bars"></i></a>
+                    <div class="menu_mobile-right">
+                        <a href=""> <i class="fas fa-search"></i> </a>
+                        <a href="./cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="header__menu">
+                <div class="container">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <i class="fas fa-bars"></i>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./home.html">Trang chủ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./products.html">Sản phẩm </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#">Sản phẩm mới</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./news.html">Tin tức</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="link-page">
+                    <h4>Home / <a href=""> Danh sách sản phẩm</a></h4>
+                </div>
+                <div class="products">
+                    <div class="products__menu-vertical">
+                        <div class="products__title">
+                            <p> Danh mục sản phẩm</p>
+                        </div>
+                        <ul class="products__menu--list">
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây chậu treo ( 10 ) </a>
+                                <ul class="products__menu--list">
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây chậu treo ( 10 ) </a>
+                                    </li>
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây có hoa ( 5 )</a>
+                                    </li>
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây dây leo</a>
+                                    </li>
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây để bàn</a>
+                                    </li>
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây may mắn </a>
+                                    </li>
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây trang trí </a>
+                                    </li>
+                                    <li class="products__menu--item">
+                                        <i class="fas fa-chevron-right"></i>
+                                        <a href="#" class="products__menu--link">Cây may mắn </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây có hoa ( 5 )</a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây dây leo</a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây để bàn</a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây may mắn </a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây trang trí </a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">Cây may mắn </a>
+                            </li>
+                        </ul>
+                        <div class="products__title">
+                            <p>Danh mục sản phẩm</p>
+                        </div>
+                        <ul class="products__menu--list">
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">200.000Đ-400.000Đ</a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">400.000Đ-600.000Đ</a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">600.000Đ-800.000Đ</a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">800.000Đ-1.000.000Đ </a>
+                            </li>
+                            <li class="products__menu--item">
+                                <i class="fas fa-chevron-right"></i>
+                                <a href="#" class="products__menu--link">1.000.000Đ-2.000.000Đ </a>
+                            </li>
+                        </ul>
+                        <div class="products__title">
+                            <p>Danh mục sản phẩm</p>
+                        </div>
+                        <div class="products__color">
+                            <div class="products__color--col">
+                                <p class="products__color--item products__color--green">Xanh cây</p>
+                                <p class="products__color--item products__color--purple">Tím</p>
+                                <p class="products__color--item products__color--yellow">Vàng</p>
+
+                            </div>
+                            <div class="products__color--col">
+                                <p class="products__color--item products__color--orange">Đỏ cam</p>
+                                <p class="products__color--item products__color--blue">Xanh trời</p>
+                                <p class="products__color--item products__color--pink">Hồng</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__list">
+                        <div class="products__panner">
+                            <img src="./img/The_Sill_84_Hester.png" alt="">
+                        </div>
+                        <nav class="products__list--nav">
+                            <div class="products__list--icon">
+                                <input type="radio" name="display" class="display__type" id="display__grid" checked>
+                                <label for="display__grid" class="grid">
+                                    <i class="fas fa-th"></i>
+                                </label>
+
+                                <label for="display__list" class="list">
+                                    <i class="fas fa-list" id="icon-list"></i>
+                                </label>
+                            </div>
+                            <div class="products__list--select">
+                                <p>Sắp xếp theo </p>
+                                <select name="nav__sort" id="nav__sort">
+                                    <option value="name">Tên sản phẩm</option>
+                                    <option value="time">Thời gian</option>
+                                    <option value="price">Giá tiền</option>
+                                </select>
+                                <p>Show</p>
+                                <select name="nav__number_show" id="nav__number_show">
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                </select>
+                            </div>
+
+                        </nav>
+                        <input type="radio" name="display" class="display__type" id="display__list">
+                        <div class="products__display" id="list">
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+                                </div>
+                            </div>
+                            <div class="product__card product__card--large">
+                                <img src="./img/spx2/spx2-3.png" alt="">
+                                <div class="product__interactive">
+
+                                    <div class="product__btn">
+                                        <a href="#" class="btn btn--buy">MUA NGAY</a>
+                                        <a href="#" class="btn btn--show"><i class="fas fa-search"></i></a>
+                                        <a href="" class="btn btn--heart btn--show"><i class="fas fa-heart"></i></a>
+                                    </div>
+
+                                </div>
+                                <div class="product__content">
+                                    <h4 class="product__name">Cây xương rồng </h4>
+                                    <p class="product__info">Cây Ngọc ngân là loại cây dành cho tình yêu! Đây là món quà
+                                        bất ngờ để bạn tặng "người ấy". Ngọc ngân (Valentine) không chỉ đẹp ở phiến lá
+                                        xanh đốm trắng.</p>
+
+                                    <h4 class="product__price">320.000₫ <span
+                                            class="product__price--old">450.000₫</span> </h4>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="products__pages">
+                            <a href="#" class="products__btn-page">Trang trước</a>
+                            <a href="#" class="products__btn-page products__btn-current">1</a>
+                            <a href="#" class="products__btn-page">2</a>
+                            <a href="#" class="products__btn-page">3</a>
+                            <a href="#" class="products__btn-page">4</a>
+                            <a href="#" class="products__btn-page">Trang cuối</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__contact">
+                <div class="container  footer__contact--inner">
+                    <div class="social">
+                        <h3 class="social__title">kÊNH THÔNG TIN TỪ CHÚNG TÔI :</h3>
+                        <div class="social__list">
+                            <a href="" class="social__item"> <i class="fab fa-facebook"></i></a>
+                            <a href="" class="social__item"> <i class="fab fa-twitter"></i></a>
+                            <a href="" class="social__item"> <i class="fab fa-youtube"></i></a>
+                            <a href="" class="social__item"> <i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="email">
+                        <h3>ĐĂNG KÍ NHẬN EMAIL TỪ CHÚNG TÔI</h3>
+                        <input type="text" placeholder="Enter your email...">
+                        <a href=""><i class="fas fa-paper-plane"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer__menu-footer">
+                <div class="container">
+                    <div class="menu__item">
+                        <img src="./img/logo.png" alt="" class="logo">
+                        <p>Mang cả không gian xanh vào ngôi nhà của bạn!</p>
+                        <a href="tel:+8418006750">1800 6750</a>
+                        <a href="mailto:support@sapo.vn">support@sapo.vn</a>
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">VỀ CHÚNG TÔI</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">ĐIỀU KHOẢN</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">HƯỚNG DẪN</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+                    <div class="menu__item">
+                        <h3 class="menu__title">CHÍNH SÁCH</h3>
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="footer__menu-infor">
+                <div class="container">
+                    <div class="infor__list">
+                        <a href="#">Trang chủ</a>
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Sản phẩm</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Liên hệ</a>
+                    </div>
+                    <div class="infor__pay">
+                        <a href="#"><i class="fab fa-cc-visa"></i></a>
+                        <a href="#"><i class="fab fa-cc-stripe"></i></a>
+                        <a href="#"><i class="fab fa-cc-paypal"></i></a>
+                        <a href="#"><i class="fab fa-cc-mastercard"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© Bản quyền thuộc về wiliam1307</p>
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+</html>
